@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ruleset styles</title>
+    <style>
+      /* Reset default body margins */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Base style for every heading - forces each onto its own separate bar */
+      h1,
+      h2,
+      h3,
+      h4 {
+        display: block;
+        width: 100%;
+        background-color: black;
+        color: white;
+        margin: 0 0 10px;
+        padding: 6px 12px;
+        box-sizing: border-box;
+        font-family: serif;
+      }
+
+      /* Orange bar rule for h3 and any element with class "important" */
+      h3,
+      .important {
+        background-color: orange;
+        color: green;
+      }
+
+      /* Text transformation */
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      /* Color overrides for inline text */
+      .blue-text {
+        color: blue;
+      }
+
+      .pink-text {
+        color: magenta;
+      }
+
+      .gray-text {
+        color: gray;
+      }
+
+      .white-text {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="uppercase">
+      <span class="pink-text">HEADING</span> <span class="blue-text">ONE</span>
+    </h1>
+    <h2 class="uppercase"><span class="pink-text">HEADING 2</span></h2>
+
+    <h3>Heading 3</h3>
+    <h4 class="important"><span class="pink-text">Heading 4</span></h4>
+
+    <h1 class="important"><span class="pink-text">Heading 1</span></h1>
+    <h2 class="important">Heading 2</h2>
+
+    <h3 class="uppercase">
+      <span class="gray-text">HEADING</span> <span class="white-text">3</span>
+    </h3>
+    <h4 class="important">Heading 4</h4>
+  </body>
+</html>
